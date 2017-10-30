@@ -2,10 +2,6 @@
 The tf-lstm-crf-batch tool is an implementation of a Named Entity Recognizer combined bi-lstm and crf based on tensorflow. Details about the model can be found at:https://arxiv.org/pdf/1603.01360.pdf
 
 
-# Initial setup
-To use the tool, you need Python 2.7, with Numpy and Tensorflow installed.
-
-
 # Tag sentences
 The fastest way to use the tool is to use one of the pretrained models:
 
