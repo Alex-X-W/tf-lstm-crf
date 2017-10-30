@@ -1,0 +1,33 @@
+data_params:
+  path_result: ./data/output
+  path_test: ./data/test
+  path_dev: ./data/dev
+  path_test_labeled: ./data/test
+  path_train: ./data/train
+  sep: table
+  voc_params:
+    f1: {min_count: 0, path: ./Res/voc.200d/f1.voc.pkl}
+    label: {min_count: 0, path: ./Res/voc.200d/label.voc.pkl}
+model: NER
+model_params:
+  batch_size: 64
+  bilstm_params: {num_layers: 1, num_units: 256}
+  clip: 10
+  dev_size: 0.1
+  embed_params:
+    f1:
+      dropout_rate: 0.1
+      path: ./Res/embed/wd.embed.200d.pkl
+      dim: 200
+    char:
+      dim: 30
+  feature_names: [f1]
+  l2_rate: 0.01
+  learning_rate: 0.002
+  max_patience: 20
+  nb_classes: 35
+  nb_epoch: 50
+  path_model: ./assets/best_model
+  rnn_unit: gru
+  sequence_length: 300
+  use_crf: true

@@ -1,0 +1,5 @@
+correct: 294    response: 443    key: 476
+
+precision: 0.6636568848758465
+recall: 0.6176470588235294
+f_score: 0.6398258977149076
